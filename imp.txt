@@ -1,0 +1,193 @@
+Delp servers
+-->deamzdellpbas02.smedeld.net         ---- Done  --97%  -Base Server
+
+-->deld-cache-eai2-01.smedeld.net      ---- Done  --98%  -dir updated to 3.0.28  -updated in name.txt
+
+-->deld-dashboard.smedeld.net          ---- Done  --98%  -dir updated to 3.0.28  -updated in name.txt
+
+-->deld-ddexws.smedeld.net	       ---- Done  --98%  -dir updated to 3.0.28  -updated in name.txt
+
+-->deld-ddexws-nginx01.smedeld.net     ---- Done  --98%  -dir updated to 3.0.28  -updated in name.txt
+
+-->deld-pgbouncer01.smedeld.net        ---- Done  --98%  -dir updated to 3.0.28  -updated in name.txt
+
+-->deld-queue-eai2.smedeld.net         ---- Done  --98%  -dir updated to 3.0.28  -updated in name.txt
+
+-->deld-scheduler02.smedeld.net	       ---- Done  --98%  -dir updated to 3.0.28  -updated in name.txt
+
+-->deld-utilities01.smedeld.net	       ---- Done  --98%  -dir updated to 3.0.28  -updated in name.txt
+
+-->deld-worker-eai2-01.smedeld.net     ---- Done  --98%  -dir updated to 3.0.28  -updated in name.txt
+
+Dels Server
+
+
+sme-samis-cloudtrail-logs    --Bucket_name
+sme-samis-cloudtrail         --trail name
+
+
+sme-cloud-ops
+
+#for HST in `cat /tmp/hosts`;do ssh -q $HST "hostname";done  -- to execute commands on remote hosts which commands are not interactive.
+
+firewall-cmd --zone=public --add-port=27017/tcp --permanent
+
+Fallowed this document to create cron tab entry with AWS lambda, for starting and stopping EC2 Instances automatically.
+https://aws.amazon.com/premiumsupport/knowledge-center/start-stop-lambda-cloudwatch/
+
+
+sed -n '/Sep 15 16:16:18/ , /Sep 15 16:16:50/p' /var/log/messages
+* * * * * myjob.sh >> /var/log/myjob.log 2>&1
+
+echo "Message Body" | mail -s "Message Subject" receiver@example.com
+
+Mereics added: for MongoDB
+-- mongodb.globallock.activeclients.readers -- Count of the active client connections performing read operations. 
+-- mongodb.globallock.activeclients.total -- Total number of active client connections to the database. 
+-- mongodb.wiredtiger.cache.bytes_currently_in_cache--Data in mongodb cache
+-- mongodb.stats.storagesize -- Total amnt of space allocated to collections in this db for doc storage.
+-- mongodb.stats.indexsize
+
+
+
+jsr number of jmx
+
+
+Resources:
+services,apps,devices and other c++ apps.                 
+wrapper:mbean, which is called bean which is called managed beans.class fallows protocol, enacapsulkate all mgmt funtly, 
+services: kind of jelp you in getting info faster, connector:get info to the remote monitoring screens..
+
+init_config:
+
+#Process monitoring for worker-eai2 process. Threshold values are set for Critical
+instances:
+  - name: worker_eai2_daemon
+    search_string: ['Dprogram.name=run.sh']
+    exact_match: False
+    tags:
+      - env:prod
+
+
+[/var/log/jboss/server.log]
+datetime_format = %Y-%m-%d %H:%M:%S,%f
+file = /var/log/jboss/server.log
+buffer_duration = 5000
+log_stream_name = {hostname}
+initial_position = end_of_file
+log_group_name = Delivery-worker2-JbossLogs
+
+stack mem-not global, 
+
+Use this command in script to run the cis scan:
+./CIS-CAT.sh -a -b ./benchmarks/CIS_Amazon_Linux_Benchmark_v2.0.0-xccdf.xml
+
+cp `ls -rt <MyFile*> | tail -1` <destination>
+
+
+#elb:media_service_prod 
+
+
+
+whch log file, which pattern, whch hosts.
+
+sme-aoma-delivery-dev
+------------------------------
+deld  ---vpc-cb6  --deld-nat01  --stopped  , total 11 server, hosts file: 10
+
+dels --dels-ddex-test-vm --stopped  total 21, hosts file:20 
+
+delb  Total 8 , hosts file:8  --nat instance java path is not found
+
+Please provide the details on:
+ log files that we can monitor for timers and the pattern for them. 
+ List of hosts 
+
+mscd --mscd-bastion01 : 4 servers
+
+
+sme-media-services-dev(Virg)
+------------------------------
+
+mpubd-app1b-01
+mpubd-pgbnc1b-01
+msrvd-all1a-wf-01
+msrvd-all1a-01
+msrvd-all1a-02
+msrvd-bastion01
+msrvd-cache1a-01
+msrvd-ejb1a-wf-01
+msrvd-ejb1a-01
+msrvd-nat01
+msrvd-wildfly02
+prsrvd-app1b-01
+ssrvd-app1a-wf-01
+ssrvd-app1a-WF-03
+ssrvd-app1a-01
+
+
+vpc-e31006   --sort-- 3 servers, production server. 
+
+dels2-cache01
+dels2-smartutils01
+dels2-ddexws01
+dels2-pgbouncer01
+dels2-ddexws-nginx02
+dels2-smartutils02
+dels2-dashbd01
+dels2-nat01
+dels2-ddexws-nginx01
+dels2-scheduler01
+dels2-bastion01
+dels2-queue01
+dels2-ddexws-nginx01
+dels2-dashbd01
+dels2-ddexws01
+dels2-mgsrv01
+
+
+10.12.204.109
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
